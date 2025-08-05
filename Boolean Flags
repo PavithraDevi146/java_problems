@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("isStudent: ");
+        boolean a=sc.nextBoolean();
+        System.out.print("hasIDCard: ");
+        boolean b=sc.nextBoolean();
+        if(a && b){
+            System.out.print("Access Granted");
+        }else{
+            System.out.print("Access Denied");
+        }
+    }
+}
