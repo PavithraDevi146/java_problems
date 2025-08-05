@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter age:");
+        int age=sc.nextInt();
+        System.out.print("Enter amount:");
+        int amt=sc.nextInt();
+        if(age>60 && amt>1000){
+            double dis=amt * 0.10;
+            double fi=amt-dis;
+            System.out.println("Discount Applied: " + dis);
+            System.out.print("Final Amount: " + fi);
+        }
+        else{
+            System.out.println("No discount");
+        }
+    }
+}
