@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Volume{
+    public static int cube(int side){
+        return side*side*side;
+    }
+    public static double cylinder(double rad, double hgt){
+        return 3.14*rad*rad*hgt;
+    }
+    public static int cuboid(int len, int wid, int height){
+        return len*wid*height;
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Side: ");
+        int side=sc.nextInt();
+        System.out.print("Enter Radius & Height: ");
+        double rad=sc.nextInt();
+        double hgt=sc.nextInt();
+        System.out.print("Enter Length, width & Height: ");
+        int len=sc.nextInt();
+        int wid=sc.nextInt();
+        int height=sc.nextInt();
+        int v_cube=cube(side);
+        double v_cylinder= cylinder(rad, hgt);
+        int v_cuboid= cuboid(len,wid,height);
+        System.out.println("Volume of cube: " +v_cube );
+        System.out.println("Volume of cylinder: " +(float)v_cylinder );
+         System.out.println("Volume of cuboid: " +v_cuboid );
+    }
+}
