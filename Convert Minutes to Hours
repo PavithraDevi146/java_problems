@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main {
+    public static void converter(int n){
+        int hrs=n/60;
+        int min=n%60;
+        System.out.print("Converted Time: "+hrs +" hour(s) "+min+" minute(s)");
+    }
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter minutes: ");
+        int n= sc.nextInt();
+        converter(n);
+    }
+}
