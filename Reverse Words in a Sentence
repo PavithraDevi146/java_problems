@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+    public static String wordreverse(String a){
+        String[] words=a.split(" ");
+        StringBuilder rev = new StringBuilder();
+        for(String word:words){
+            StringBuilder revword=new StringBuilder(word);
+            rev.append(revword.reverse()).append(" ");
+        }
+        return rev.toString().trim();
+    }
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter sentence: ");
+        String a= sc.nextLine();
+        String r=wordreverse(a);
+        System.out.print(" Reversed sentence: "+r);
+    }
+}
